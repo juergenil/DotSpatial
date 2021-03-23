@@ -12,7 +12,7 @@
     <Description>This assembly provides objects used to design geographic applications.</Description>
     <AssemblyName>DotSpatial.Positioning</AssemblyName>
     <RootNamespace>DotSpatial.Positioning</RootNamespace>
-    <Version>2.0.0-Std03</Version>
+    <Version>2.0.0-Std04</Version>
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
 
@@ -24,22 +24,6 @@
 
   <ItemGroup>
     <Compile Remove="Properties\AssemblyInfo.cs" />
-    <Compile Remove="BluetoothAddress.cs" />
-    <Compile Remove="BluetoothDevice.cs" />
-    <Compile Remove="BluetoothEndPoint.cs" />
-    <Compile Remove="BluetoothRadio.cs" />
-    <Compile Remove="Device.cs" />
-    <Compile Remove="Devices.cs" />
-    <Compile Remove="Interpreter.cs" />
-    <Compile Remove="NativeMethods.cs" />
-    <Compile Remove="NativeMethods2.cs" />
-    <Compile Remove="NetworkDevice.cs" />
-    <Compile Remove="NmeaInterpreter.cs" />
-    <Compile Remove="Platform.cs" />
-    <Compile Remove="SafeBluetoothRadioFindHandle.cs" />
-    <Compile Remove="SerialDevice.cs" />
-    <Compile Remove="SerialPort.cs" />
-    <Compile Remove="VirtualDevice.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,7 +32,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
     <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+    <PackageReference Include="System.IO.Ports" Version="5.0.1" />
   </ItemGroup>
 
 </Project>

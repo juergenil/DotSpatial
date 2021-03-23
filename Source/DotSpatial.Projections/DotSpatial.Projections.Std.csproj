@@ -12,7 +12,7 @@
     <Description>For working with Projections and coordinate systems. A port of the popular proj4 C++ library to C#</Description>
     <AssemblyName>DotSpatial.Projections</AssemblyName>
     <RootNamespace>DotSpatial.Projections</RootNamespace>
-    <Version>2.0.0-Std03</Version>
+    <Version>2.0.0-Std04</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

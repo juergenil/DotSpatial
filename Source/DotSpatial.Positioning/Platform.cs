@@ -101,6 +101,8 @@ namespace DotSpatial.Positioning
         private const DotNetFrameworkID DOT_NET_FRAMEWORK_ID = DotNetFrameworkID.DesktopFramework40;
 #elif Framework30
         private const DotNetFrameworkID DOT_NET_FRAMEWORK_ID = DotNetFrameworkID.DesktopFramework30;
+#else
+        private const DotNetFrameworkID DOT_NET_FRAMEWORK_ID = DotNetFrameworkID.Unknown;
 #endif
 
         #endregion Private variables
