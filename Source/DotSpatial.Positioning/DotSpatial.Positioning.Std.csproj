@@ -12,8 +12,8 @@
     <Description>This assembly provides objects used to design geographic applications.</Description>
     <AssemblyName>DotSpatial.Positioning</AssemblyName>
     <RootNamespace>DotSpatial.Positioning</RootNamespace>
-    <Version>2.0.0-Std02</Version>
-    <DefineConstants>TRACE;Framework20</DefineConstants>
+    <Version>2.0.0-Std03</Version>
+    <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -23,41 +23,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Properties\AssemblyInfo.cs" />
     <Compile Remove="BluetoothAddress.cs" />
     <Compile Remove="BluetoothDevice.cs" />
     <Compile Remove="BluetoothEndPoint.cs" />
     <Compile Remove="BluetoothRadio.cs" />
     <Compile Remove="Device.cs" />
     <Compile Remove="Devices.cs" />
-    <Compile Remove="Filter.cs" />
-    <Compile Remove="Interpolator.cs" />
-    <Compile Remove="Interpolator2D.cs" />
     <Compile Remove="Interpreter.cs" />
-    <Compile Remove="KalmanFilter.cs" />
-    <Compile Remove="Matrix.cs" />
     <Compile Remove="NativeMethods.cs" />
     <Compile Remove="NativeMethods2.cs" />
     <Compile Remove="NetworkDevice.cs" />
     <Compile Remove="NmeaInterpreter.cs" />
-    <Compile Remove="NmeaReader.cs" />
     <Compile Remove="Platform.cs" />
-    <Compile Remove="PositionAverageFilter.cs" />
-    <Compile Remove="PositioningStrings.Designer.cs" />
-    <Compile Remove="Properties\AssemblyInfo.cs" />
-    <Compile Remove="RectangleD.cs" />
-    <Compile Remove="RectangleFHelper.cs" />
-    <Compile Remove="RouteFileEmulator.cs" />
     <Compile Remove="SafeBluetoothRadioFindHandle.cs" />
     <Compile Remove="SerialDevice.cs" />
     <Compile Remove="SerialPort.cs" />
-    <Compile Remove="SquareMatrix3D.cs" />
-    <Compile Remove="StaticFinalizer.cs" />
     <Compile Remove="VirtualDevice.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove="Interpreter.resx" />
     <EmbeddedResource Remove="PositioningStrings.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
   </ItemGroup>
 
 </Project>
