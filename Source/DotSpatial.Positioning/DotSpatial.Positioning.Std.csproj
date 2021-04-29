@@ -12,7 +12,7 @@
     <Description>This assembly provides objects used to design geographic applications.</Description>
     <AssemblyName>DotSpatial.Positioning</AssemblyName>
     <RootNamespace>DotSpatial.Positioning</RootNamespace>
-    <Version>2.0.0-Std03</Version>
+    <Version>2.0.0-Std03a</Version>
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
 
@@ -48,7 +48,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
   </ItemGroup>
 
 </Project>
